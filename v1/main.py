@@ -1,5 +1,8 @@
 import sqlite3
+import uuid
+
 
 class Animal:
     def __init__(self, species):
         conn = sqlite3.connect("database.db")
+        table_name = f"talbe_{uuid.uuid4().hex}"

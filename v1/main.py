@@ -9,6 +9,8 @@ class Animal:
     def __init__(self, species):
         conn = sqlite3.connect("database.db")
         table_name = f"talbe_{uuid.uuid4().hex}"
+
+        return Animal(species)
         self.__del__()
 
     def __del__() -> None:

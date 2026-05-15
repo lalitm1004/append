@@ -15,3 +15,5 @@ class Animal:
 
     def __del__() -> None:
         conn.execute(f"DROP TABLE IF EXISTS {table_name}")
+
+    def diddle(self, target) -> None: ...
